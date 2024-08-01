@@ -1,4 +1,4 @@
-//
+//to create prod ready app, we need to change the codebase
 
 const heading= React.createElement(
     "h1", {id:"attributes"}, "Hello World from React (CDN link)"); //tag , attributes , childs --> this return an Obj
@@ -15,7 +15,6 @@ root.render(heading) //render help to convert the obj & then put it in html
 
 </div>
 */
-
 const box= React.createElement(
     "h1", {id:"attributes"},
     [React.createElement("h2",{},"Inside Parent Div"),
@@ -31,3 +30,9 @@ const box= React.createElement(
 const rootBox= ReactDOM.createRoot(document.getElementById("box-2"));
 
 rootBox.render(box)
+
+/*
+Bhagban...bacha loo mujhe.. It's getting heavier.. nikalo in dono ko// 
+nxt month pg change.... otherwise.. done!!
+
+*/
