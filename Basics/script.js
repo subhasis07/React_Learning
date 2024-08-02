@@ -31,8 +31,3 @@ const rootBox= ReactDOM.createRoot(document.getElementById("box-2"));
 
 rootBox.render(box)
 
-/*
-Bhagban...bacha loo mujhe.. It's getting heavier.. nikalo in dono ko// 
-nxt month pg change.... otherwise.. done!!
-
-*/
