@@ -1,0 +1,56 @@
+.headingPart{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.appLogo img{
+    width: 150px;
+}
+
+.search_Filter{
+    display: flex;
+}
+.navItems> ul{
+    display: flex;
+    padding: 10px;
+    margin-top: 35px;
+    gap: 25px;
+    list-style-type: none;
+
+}
+
+.navItems> ul > li{
+    font-size: 20px;
+}
+.ResCards> img{
+    width: 100%
+}
+.searchBox, .TopResBtn{
+    margin: 15px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.ResCards{
+    width:200px;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.ResCards:hover{
+    background-color: #c6eaec;
+    cursor: pointer;
+}
+.AllResCards{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.TopResBtn{
+    cursor: pointer;
+}
