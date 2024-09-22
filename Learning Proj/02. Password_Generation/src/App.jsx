@@ -10,6 +10,8 @@ function App() {
 
   const passwordRef=useRef(null);
 
+
+  //password generation code --using callback to store cache & dependency added so that new pwd generated on any change in dependency
   const passwordGeneration=useCallback(()=>{
     let pass="";
     let allowedString="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -38,10 +40,12 @@ function App() {
     window.navigator.clipboard.writeText(password);
   },[password])
 
-
-    useEffect(()=>{
+  //calling pwd gen func -- useeffect
+  useEffect(()=>{
         passwordGeneration();
     },[length,numberAllowed,characterAllowed,passwordGeneration])
+
+
   return (
     <div className='h-screen w-full bg-zinc-800 text-black'>
         <div className='w-auto mx-48 rounded-lg bg-zinc-500 text-3xl p-5'>
@@ -64,6 +68,8 @@ function App() {
           </div>
           
           <div className='flex justify-evenly mt-5'>
+
+          {/* slider */}
             <div className='flex items-center gap-x-2'>
                 <input
                   type='range'
@@ -77,6 +83,7 @@ function App() {
                 <label className="text-xl">Length: {length}</label>
             </div>
 
+          {/* dependency-1 */}
             <div className='flex items-center gap-x-2'>
               <input 
                 type="checkbox" 
@@ -90,6 +97,8 @@ function App() {
               <label className="text-xl">Number</label>
 
             </div>
+            
+          {/* dependency-2 */}
             <div className='flex items-center gap-x-2'>
               <input 
                 type="checkbox"
