@@ -12,3 +12,4 @@ Currently, two official plugins are available:
 1.useCallback: used for optimization it calls the function inside it when the dependencies are changed and returns a memorized function 
 2.useeffect: runs the function inside it whenever the page renders first-time or dependencies are changed
 3.useRef : used to give reference of selected components in our page so that functions can be performed on referenced values
+4.useParams: returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>
