@@ -1,0 +1,18 @@
+.app{
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.outer{
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.inner{
+  background-color: aqua;
+  text-align: center;
+  text-align: right;
+  transition: 1000ms ease-in;
+}
