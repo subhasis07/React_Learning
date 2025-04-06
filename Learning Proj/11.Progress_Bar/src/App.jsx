@@ -2,9 +2,11 @@ import { useEffect, useState } from "react"
 
 const ProgressBar=({progress})=>{
   const[animatedProgress, setAnimatedProgress]=useState(0);
+
   useEffect(()=>{
     setTimeout(()=>setAnimatedProgress(progress),100)
   },[progress])
+  
   return(
     <div className="outer">
       <div 

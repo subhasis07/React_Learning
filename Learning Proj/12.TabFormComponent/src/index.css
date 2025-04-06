@@ -1,0 +1,25 @@
+.app{
+  margin: 20px;
+}
+
+.TabComp{
+  display: flex;
+  gap: 5px;
+}
+
+.heading{
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+.DetailsComp{
+  display: flex;
+  border: 1px solid black;
+  height: 200px;
+  padding: 10px;
+  margin-top: 5px;
+}
+

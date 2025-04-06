@@ -4,7 +4,7 @@ function App() {
   const OTP_INPUTBOX=5;
 
   // State to store the OTP digits as an array
-  const[inputArr, setIinputArr]= useState(
+  const[inputArr, setInputArr]= useState(
     new Array(OTP_INPUTBOX).fill("")
   )
 
@@ -18,12 +18,12 @@ function App() {
 
   // Handle input change
   const handleOnChange= (value,index)=>{
-    if(isNaN(value) || value === " ") return; // Allow only digits (strip out anything that's not a number)
+    if(isNaN(value) || value === " ") return; // Allow only digits
     
     const newVal=value.trim();
     const newArr=[...inputArr];
     newArr[index]=newVal.slice(-1); // Only allow 1 digit
-    setIinputArr(newArr);
+    setInputArr(newArr);
     refArr.current[index+1]?.focus(); // Move focus to the next input field
   }
 
@@ -34,12 +34,12 @@ function App() {
   
       if (inputArr[index]) {
         newArr[index] = ""; // If current box is not empty, clear it
-        setIinputArr(newArr);
+        setInputArr(newArr);
       } else {
         if (index > 0) {
           // If current is already empty, move focus back and clear previous
           newArr[index - 1] = ""; 
-          setIinputArr(newArr);
+          setInputArr(newArr);
           refArr.current[index - 1]?.focus();
         }
       }
